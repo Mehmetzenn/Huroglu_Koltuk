@@ -88,29 +88,29 @@ public class PlcService
         if (result != 0)
             throw new Exception($"DB2 Write Error: {plc.ErrorText(result)}");
     }
-    //public PozisyonDataKalıcı ReadPozisyonData()
-    //{
-    //    if (!IsConnected())
-    //        throw new InvalidOperationException("PLC bağlı değil.");
+    public PozisyonDataKalıcı ReadPozisyonData()
+    {
+        if (!IsConnected())
+            throw new InvalidOperationException("PLC bağlı değil.");
 
-    //    byte[] buffer = new byte[24]; // PozisyonDataKalıcı aktif olarak 24 byte kullanıyor
-    //    int result = plc.DBRead(DB, 0, buffer.Length, buffer);
+        byte[] buffer = new byte[24]; // PozisyonDataKalıcı aktif olarak 24 byte kullanıyor
+        int result = plc.DBRead(DB, 0, buffer.Length, buffer);
 
-    //    if (result == 0)
-    //        return PozisyonDataKalıcı.FromBuffer(buffer);
-    //    else
-    //        throw new Exception($"DB11 Read Error: {plc.ErrorText(result)}");
-    //}
-    //public void WritePozisyonData(PozisyonDataKalıcı data)
-    //{
-    //    if (!IsConnected())
-    //        throw new InvalidOperationException("PLC bağlı değil.");
+        if (result == 0)
+            return PozisyonDataKalıcı.FromBuffer(buffer);
+        else
+            throw new Exception($"DB11 Read Error: {plc.ErrorText(result)}");
+    }
+    public void WritePozisyonData(PozisyonDataKalıcı data)
+    {
+        if (!IsConnected())
+            throw new InvalidOperationException("PLC bağlı değil.");
 
-    //    byte[] buffer = data.ToBuffer(); // Bu 60 byte döndürüyor, ama 24 byte yeterli
-    //    int result = plc.DBWrite(DB, 0, 24, buffer); // Sadece 24 byte yaz
+        byte[] buffer = data.ToBuffer(); // Bu 60 byte döndürüyor, ama 24 byte yeterli
+        int result = plc.DBWrite(DB, 0, 24, buffer); // Sadece 24 byte yaz
 
-    //    if (result != 0)
-    //        throw new Exception($"DB11 Write Error: {plc.ErrorText(result)}");
-    //}
+        if (result != 0)
+            throw new Exception($"DB11 Write Error: {plc.ErrorText(result)}");
+    }
 
 }

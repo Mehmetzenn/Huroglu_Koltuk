@@ -12,9 +12,9 @@ namespace Button_Control_With_SQL.Models
         public float PozizyonOneSpeed { get; set; }
         public float PozisyonTwo { get; set; }
         public float PozisyonTwoSpeed { get; set; }
-        
+
         public int SetTestSayısı { get; set; }
-        
+
         public int ActualTestSayısı { get; set; }
 
         public static PozisyonDataKalıcı FromBuffer(byte[] buffer)

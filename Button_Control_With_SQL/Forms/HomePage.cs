@@ -81,7 +81,7 @@ namespace Button_Control_With_SQL
                     label2.Text = label15.Text = "Veri alınamadı!";
                     return;
                 }
-                label5.Text = data2.ActualPozisyon.ToString()+ " mm";
+                label5.Text = data2.ActualPozisyon.ToString("F1")+ " mm";
                 label2.Text = data.ActualKuvvet.ToString("F2") + " kg";
                 label15.Text = data.ActualTestSayisi.ToString() + " adet";
 
@@ -242,6 +242,12 @@ namespace Button_Control_With_SQL
         private void label6_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            var raporForm = new ReportForm();
+            raporForm.Show();
         }
     }
 }
