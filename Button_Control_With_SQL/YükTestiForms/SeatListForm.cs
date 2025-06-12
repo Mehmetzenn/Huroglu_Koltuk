@@ -28,7 +28,7 @@ namespace Button_Control_With_SQL
         {
             // PLC bağlantı kontrolü
             plcTimer = new Timer();
-            plcTimer.Interval = 500;
+            plcTimer.Interval = 100;
             plcTimer.Tick += PlcTimer_Tick;
             plcTimer.Start();
             SetupDataGridView();

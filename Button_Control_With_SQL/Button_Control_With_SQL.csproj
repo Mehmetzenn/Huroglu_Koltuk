@@ -186,46 +186,46 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Forms\Deneme.cs">
+    <Compile Include="PozisyonTestiForms\PozisyonPage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Deneme.Designer.cs">
-      <DependentUpon>Deneme.cs</DependentUpon>
+    <Compile Include="PozisyonTestiForms\PozisyonPage.Designer.cs">
+      <DependentUpon>PozisyonPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\HomePage.cs">
+    <Compile Include="YükTestiForms\HomePage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\HomePage.Designer.cs">
+    <Compile Include="YükTestiForms\HomePage.Designer.cs">
       <DependentUpon>HomePage.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\ReportForm.cs">
+    <Compile Include="YükTestiForms\ReportForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\ReportForm.Designer.cs">
+    <Compile Include="YükTestiForms\ReportForm.Designer.cs">
       <DependentUpon>ReportForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\SeatEditForm.cs">
+    <Compile Include="YükTestiForms\SeatEditForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\SeatEditForm.Designer.cs">
+    <Compile Include="YükTestiForms\SeatEditForm.Designer.cs">
       <DependentUpon>SeatEditForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\SeatListForm.cs">
+    <Compile Include="YükTestiForms\SeatListForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\SeatListForm.Designer.cs">
+    <Compile Include="YükTestiForms\SeatListForm.Designer.cs">
       <DependentUpon>SeatListForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Settings.cs">
+    <Compile Include="YükTestiForms\Settings.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Settings.Designer.cs">
+    <Compile Include="YükTestiForms\Settings.Designer.cs">
       <DependentUpon>Settings.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\SettingsForm.cs">
+    <Compile Include="YükTestiForms\SettingsForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\SettingsForm.Designer.cs">
+    <Compile Include="YükTestiForms\SettingsForm.Designer.cs">
       <DependentUpon>SettingsForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\DataKalici.cs" />
@@ -237,25 +237,25 @@
     <Compile Include="Services\PlcService.cs" />
     <Compile Include="Services\SeatService.cs" />
     <Compile Include="Sharp7\Class1.cs" />
-    <EmbeddedResource Include="Forms\Deneme.resx">
-      <DependentUpon>Deneme.cs</DependentUpon>
+    <EmbeddedResource Include="PozisyonTestiForms\PozisyonPage.resx">
+      <DependentUpon>PozisyonPage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\HomePage.resx">
+    <EmbeddedResource Include="YükTestiForms\HomePage.resx">
       <DependentUpon>HomePage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\ReportForm.resx">
+    <EmbeddedResource Include="YükTestiForms\ReportForm.resx">
       <DependentUpon>ReportForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\SeatEditForm.resx">
+    <EmbeddedResource Include="YükTestiForms\SeatEditForm.resx">
       <DependentUpon>SeatEditForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\SeatListForm.resx">
+    <EmbeddedResource Include="YükTestiForms\SeatListForm.resx">
       <DependentUpon>SeatListForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Settings.resx">
+    <EmbeddedResource Include="YükTestiForms\Settings.resx">
       <DependentUpon>Settings.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\SettingsForm.resx">
+    <EmbeddedResource Include="YükTestiForms\SettingsForm.resx">
       <DependentUpon>SettingsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

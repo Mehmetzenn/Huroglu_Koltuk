@@ -92,7 +92,6 @@
             this.lblProductName.Size = new System.Drawing.Size(128, 21);
             this.lblProductName.TabIndex = 4;
             this.lblProductName.Text = "Product Name :";
-            this.lblProductName.Click += new System.EventHandler(this.lblProductName_Click);
             // 
             // btnRaporOlustur
             // 

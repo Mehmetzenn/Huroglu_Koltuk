@@ -118,9 +118,5 @@ namespace Button_Control_With_SQL.Forms
             }
         }
 
-        private void lblProductName_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

@@ -66,7 +66,7 @@ namespace Button_Control_With_SQL
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(960, 148);
             this.label1.TabIndex = 35;
-            this.label1.Text = "HÜROĞLU\nKoltuk Yük Testi Makinası";
+            this.label1.Text = "HÜROĞLU Yük Testi Makinası";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label2
@@ -199,7 +199,6 @@ namespace Button_Control_With_SQL
             this.button7.TabIndex = 23;
             this.button7.Text = "▲";
             this.button7.UseVisualStyleBackColor = false;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
             this.button7.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button7_MouseDown);
             this.button7.MouseUp += new System.Windows.Forms.MouseEventHandler(this.button7_MouseUp);
             // 
@@ -313,7 +312,6 @@ namespace Button_Control_With_SQL
             this.label4.TabIndex = 34;
             this.label4.Text = "AKA";
             this.label4.Visible = false;
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label5
             // 
@@ -333,14 +331,13 @@ namespace Button_Control_With_SQL
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label6.ForeColor = System.Drawing.Color.SeaGreen;
+            this.label6.ForeColor = System.Drawing.Color.Gray;
             this.label6.Location = new System.Drawing.Point(1655, 0);
             this.label6.Name = "label6";
             this.label6.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label6.Size = new System.Drawing.Size(67, 37);
             this.label6.TabIndex = 37;
             this.label6.Text = "AKA";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // button2
             // 
@@ -388,7 +385,7 @@ namespace Button_Control_With_SQL
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "HomePage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "HomePage";
+            this.Text = "Yük Testi";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.HomePage_Load);
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();

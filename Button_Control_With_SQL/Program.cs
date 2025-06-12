@@ -1,5 +1,4 @@
-﻿
-using PlcFormUygulama;
+﻿using Button_Control_With_SQL.PozisyonTestiForms;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,7 +17,7 @@ namespace Button_Control_With_SQL
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new HomePage());
+            Application.Run(new PozisyonPage());
         }
     }
 }
